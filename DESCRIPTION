@@ -1,0 +1,22 @@
+Package: PixFluRoBlend
+Title: Blend Pixel and RFU Quantification Using Monotone Dose-Response Fits
+Version: 0.1.0
+Authors@R: person("Zachary", "Madaj", email = "zachary.madaj@vai.org", role = c("aut", "cre"))
+Description: Fits monotone-increasing smooth curves (via scam) to signals
+    quantified by two methods (pixel intensity and RFU), then combines them
+    into a single estimate with a weighted geometric mean. Weights depend on
+    where the two curves cross and on each method's estimated precision.
+License: MIT + file LICENSE
+Encoding: UTF-8
+Roxygen: list(markdown = TRUE)
+RoxygenNote: 7.3.2
+Depends: R (>= 4.1.0)
+Imports:
+    ggplot2 (>= 3.5.0),
+    ggsci,
+    mgcv,
+    readxl,
+    rlang,
+    scam,
+    stats,
+    utils
