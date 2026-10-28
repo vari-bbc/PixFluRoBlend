@@ -13,8 +13,10 @@ fit_curves <- function(df) {
   )
   p <- predict(fit, newdata = grid, se.fit = TRUE)
   grid$pred <- 2^as.numeric(p$fit)
-  grid$SD <- sqrt(as.numeric(p$se.fit)^2 + fit$sig2)
 
+  sig2_m <- tapply(residuals(fit)^2, df$QuantMethod, mean)
+  grid$SD <- sqrt(as.numeric(p$se.fit)^2 + sig2_m[as.character(grid$QuantMethod)])
+  
   px  <- grid[grid$QuantMethod == "pixels", ]
   rfu <- grid[grid$QuantMethod == "RFU", ]
   dat <- merge(

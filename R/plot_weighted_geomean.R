@@ -36,5 +36,5 @@ plot_weighted_geomean <- function(result, raw = NULL, title = NULL,
     )
     p <- p + geom_point(data = pts, alpha = 0.25)
   }
-  p
+  return(p)
 }
