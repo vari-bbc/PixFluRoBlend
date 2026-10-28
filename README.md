@@ -1,4 +1,4 @@
-# quantblend
+# PixFluRoBlend
 
 Blend pixel-based and RFU-based quantification into one estimate using
 monotone dose-response fits (`scam`) and a precision-weighted geometric mean.
@@ -7,13 +7,13 @@ monotone dose-response fits (`scam`) and a precision-weighted geometric mean.
 
 ```r
 # install.packages("remotes")
-remotes::install_github("YOUR_USERNAME/quantblend")
+remotes::install_github("YOUR_USERNAME/PixFluRoBlend")
 ```
 
 ## Use
 
 ```r
-library(quantblend)
+library(PixFluRoBlend)
 
 dat <- prepare_data("example_data.xlsx")
 out <- run_weighted_geomean("MUC16:sWFL", data = dat)
