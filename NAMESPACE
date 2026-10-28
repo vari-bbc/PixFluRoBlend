@@ -8,9 +8,12 @@ import(ggplot2)
 importFrom(ggsci,pal_aaas)
 importFrom(readxl,read_excel)
 importFrom(rlang,.data)
-importFrom(scam,s)
 importFrom(scam,scam)
-importFrom(stats,plogis)
-importFrom(stats,predict)
-importFrom(utils,head)
-importFrom(utils,tail)
+importFrom(stats,
+  plogis,
+  predict
+)
+importFrom(utils,
+  head,
+  tail
+)
