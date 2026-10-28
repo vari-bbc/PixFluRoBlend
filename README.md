@@ -7,7 +7,7 @@ monotone dose-response fits (`scam`) and a precision-weighted geometric mean.
 
 ```r
 # install.packages("remotes")
-remotes::install_github("YOUR_USERNAME/PixFluRoBlend")
+remotes::install_github("vari-bbc/PixFluRoBlend")
 ```
 
 ## Use
